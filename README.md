@@ -1,5 +1,7 @@
 # Han in Glyphs
 
+## Languages - `han.plist`
+
 - [x] Fundamental (Simplified) / 基础十二字（简）
 - [x] Fundamental (Traditional) / 基础十二字（繁）
 - [x] Undecomposable / 独体字
@@ -36,3 +38,8 @@
   - [x] Bopomofo Extended / 注音符号扩展
   - [x] Suzhou Numerals / 苏州码子
   - [x] Other Han Symbols / 其他符号
+
+## Categories - `han-punct.plist`
+
+- Punctuation / 标点
+  - [x] Fullwidth / 全宽标点
