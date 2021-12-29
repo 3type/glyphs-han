@@ -1,24 +1,15 @@
-TEMPLATE_STR = r'''
-	{{
-		icon = HanTemplate;
-		name = Chinese;
-		predicate = "script == \"han\"";
-		subGroup = ({}
-		);
-	}},'''
-
 main_str = ''
 
 def add_quotes(s: str) -> str:
 	if s.find(' ') != -1:
-		return '"{}"'.format(s)
+		return f'"{s}"'
 	else:
 		return s
 
 def get_char_list(rel_path: str, tabs: int, use_char=True) -> str:
-	with open('Tables/{}.txt'.format(rel_path)) as f:
+	with open(f'Tables/{rel_path}.txt') as f:
 		if use_char:
-			lines = ['"{}"'.format(line[0]) for line in f.readlines()]
+			lines = [f'"{line[0]}"' for line in f.readlines()]
 		else:
 			lines = [line[:-1] for line in f.readlines()]
 		init = '\n' + '\t' * tabs
@@ -35,11 +26,11 @@ for i in [
 		'Undecomposable',
 		'Commonly Used on Internet',
 	]:
-	main_str += '''
+	main_str += f'''
 			{{
-				name = {};
-				charList = ({});
-			}},'''.format(add_quotes(i), get_char_list(i, 5))
+				name = {add_quotes(i)};
+				charList = ({get_char_list(i, 5)});
+			}},'''
 
 ########################################
 ## Part 2 - Regional
@@ -66,24 +57,24 @@ for name, sub in {
 	}.items():
 	sub_group = ''
 	for i in sub:
-		sub_group += '''
+		sub_group += f'''
 							{{
-								name = {};
-								charList = ({});
-							}},'''.format(
-								add_quotes(i),
-								get_char_list('Regional/{}/{}'.format(name, i), 9))
-	regional_str += '''
+								name = {add_quotes(i)};
+								charList = ({get_char_list(f'Regional/{name}/{i}', 9)});
+							}},'''
+	regional_str += f'''
 					{{
-						name = {};
-						subGroup = ({});
-					}},'''.format(add_quotes(name), sub_group + '\n' + '\t' * 6)
+						name = {add_quotes(name)};
+						subGroup = ({sub_group}
+						);
+					}},'''
 
-main_str += '''
+main_str += f'''
 			{{
 				name = Regional;
-				subGroup = ({});
-			}},'''.format(regional_str + '\n\t\t\t\t')
+				subGroup = ({regional_str}
+				);
+			}},'''
 
 ########################################
 ## Part 3 - Character Sets
@@ -97,17 +88,18 @@ for i in [
 		'Unicode CJK Unified Ideographs',
 		'Unicode CJK Unified Ideographs Extension A',
 	]:
-	charset_str += '''
+	charset_str += f'''
 					{{
-						name = {};
-						charList = ({});
-					}},'''.format(add_quotes(i), get_char_list('Character Sets/' + i, 7))
+						name = {add_quotes(i)};
+						charList = ({get_char_list('Character Sets/' + i, 7)});
+					}},'''
 
-main_str += '''
+main_str += f'''
 			{{
 				name = "Character Sets";
-				subGroup = ({});
-			}},'''.format(charset_str + '\n\t\t\t\t')
+				subGroup = ({charset_str}
+				);
+			}},'''
 
 ########################################
 ## Part 4 - Symbols
@@ -124,23 +116,31 @@ for i in [
 		('Suzhou Numerals', False),
 		('Other Han Symbols', False),
 	]:
-	symbols_str += '''
+	key = 'charList' if i[1] else 'coverage'
+	val = get_char_list('Radicals, Strokes and Symbols/' + i[0], 7, use_char=i[1])
+	symbols_str += f'''
 					{{
-						name = {};
-						{} = ({});
-					}},'''.format(
-						add_quotes(i[0]),
-						'charList' if i[1] else 'coverage',
-						get_char_list('Radicals, Strokes and Symbols/' + i[0], 7, use_char=i[1]))
+						name = {add_quotes(i[0])};
+						{key} = ({val});
+					}},'''
 
-main_str += '''
+main_str += f'''
 			{{
 				name = "Radicals, Strokes and Symbols";
-				subGroup = ({});
-			}},'''.format(symbols_str + '\n\t\t\t\t')
+				subGroup = ({symbols_str}
+				);
+			}},'''
 
 ########################################
 ## Final print
 ########################################
 
-print(TEMPLATE_STR.format(main_str))
+print(rf'''
+	{{
+		icon = HanTemplate;
+		name = Chinese;
+		predicate = "script == \"han\"";
+		subGroup = ({main_str}
+		);
+	}},'''
+)
