@@ -30,6 +30,7 @@
   - [ ] Unicode CJK Unified Ideographs Extension E / Unicode CJK 统一表意文字扩展 E 区
   - [ ] Unicode CJK Unified Ideographs Extension F / Unicode CJK 统一表意文字扩展 F 区
   - [ ] Unicode CJK Unified Ideographs Extension G / Unicode CJK 统一表意文字扩展 G 区
+  - [ ] Unicode CJK Unified Ideographs Extension H / Unicode CJK 统一表意文字扩展 H 区
 - Radicals, Strokes and Symbols / 非汉字字符
   - [x] Kangxi Radicals / 康熙部首
   - [x] Radicals Supplement / 部首扩充

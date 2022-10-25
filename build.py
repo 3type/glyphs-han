@@ -3,11 +3,10 @@ main_str = ''
 def add_quotes(s: str) -> str:
 	if s.find(' ') != -1:
 		return f'"{s}"'
-	else:
-		return s
+	return s
 
 def get_char_list(rel_path: str, tabs: int, use_char=True) -> str:
-	with open(f'Tables/{rel_path}.txt') as f:
+	with open(f'Tables/{rel_path}.txt', encoding='utf-8') as f:
 		if use_char:
 			lines = [f'"{line[0]}"' for line in f.readlines()]
 		else:
