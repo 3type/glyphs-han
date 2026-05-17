@@ -85292,6 +85292,8 @@
 							cjkStrokeHzzzg,
 							cjkStrokePg,
 							cjkStrokeQ,
+							uni31E4,
+							uni31E5,
 						);
 					},
 					{
@@ -85404,6 +85406,15 @@
 							enteringtone-han,
 							telegraphLineFeed-han,
 							ninojiten-han,
+							u16FE2,
+							u16FE3,
+							u16FF0,
+							u16FF1,
+							u16FF2,
+							u16FF3,
+							u16FF4,
+							u16FF5,
+							u16FF6,
 						);
 					},
 				);
