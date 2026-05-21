@@ -81,16 +81,36 @@ main_str += f'''
 
 charset_str = ''
 
-for i in [
+for item in [
 		'GB 2312',
+		{'GB 18030': [
+			'Level 1',
+			'Level 2',
+			'Level 3',
+		]},
 		'Big 5',
-		'Unicode CJK Unified Ideographs',
-		'Unicode CJK Unified Ideographs Extension A',
 	]:
-	charset_str += f'''
+	if isinstance(item, dict):
+		name = list(item.keys())[0]
+		sub = item[name]
+		sub_group = ''
+		for i in sub:
+			sub_group += f'''
+							{{
+								name = {add_quotes(i)};
+								charList = ({get_char_list(f'Character Sets/{name}/{i}', 9)});
+							}},'''
+		charset_str += f'''
 					{{
-						name = {add_quotes(i)};
-						charList = ({get_char_list('Character Sets/' + i, 7)});
+						name = {add_quotes(name)};
+						subGroup = ({sub_group}
+						);
+					}},'''
+	else:
+		charset_str += f'''
+					{{
+						name = {add_quotes(item)};
+						charList = ({get_char_list('Character Sets/' + item, 7)});
 					}},'''
 
 main_str += f'''
@@ -101,7 +121,41 @@ main_str += f'''
 			}},'''
 
 ########################################
-## Part 4 - Symbols
+## Part 4 - Unicode Blocks
+########################################
+
+unicode_str = ''
+
+for i in [
+		'CJK Unified',
+		'CJK Ext. A',
+		'CJK Ext. B',
+		'CJK Ext. C',
+		'CJK Ext. D',
+		'CJK Ext. E',
+		'CJK Ext. F',
+		'CJK Ext. G',
+		'CJK Ext. H',
+		'CJK Ext. I',
+		'CJK Ext. J',
+		'CJK Compatibility',
+		'CJK Compatibility Supplement',
+	]:
+	unicode_str += f'''
+					{{
+						name = {add_quotes(i)};
+						charList = ({get_char_list('Unicode Blocks/' + i, 7)});
+					}},'''
+
+main_str += f'''
+			{{
+				name = "Unicode Blocks";
+				subGroup = ({unicode_str}
+				);
+			}},'''
+
+########################################
+## Part 5 - Symbols
 ########################################
 
 symbols_str = ''

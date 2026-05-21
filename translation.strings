@@ -1,12 +1,12 @@
 "Chinese" = "中文";
 
-"Fundamental (Simplified)" = "基础十二字（简）";
+"Fundamental (Simplified)" = "基础十二字・简";
 
-"Fundamental (Traditional)" = "基础十二字（繁）";
+"Fundamental (Traditional)" = "基础十二字・繁";
 
 "Undecomposable" = "独体字";
 
-"Commonly Used on Internet" = "网络常用字";
+"Commonly Used on Internet" = "繁简及网络常用";
 
 "Regional" = "地区字表";
 
@@ -38,31 +38,45 @@
 
 "GB 2312" = "GB 2312";
 
+"GB 18030" = "GB 18030";
+
+"Level 1" = "实现级别一";
+
+"Level 2" = "实现级别二";
+
+"Level 3" = "实现级别三";
+
 "Big 5" = "大五码";
 
-"Unicode CJK Unified Ideographs" = "Unicode CJK 统一表意文字";
+"Unicode Blocks" = "Unicode 区块";
 
-"Unicode CJK Unified Ideographs Extension A" = "Unicode CJK 统一表意文字扩展 A 区";
+"CJK Unified" = "CJK 基本区";
 
-"Unicode CJK Unified Ideographs Extension B" = "Unicode CJK 统一表意文字扩展 B 区";
+"CJK Ext. A" = "CJK 扩展 A";
 
-"Unicode CJK Unified Ideographs Extension C" = "Unicode CJK 统一表意文字扩展 C 区";
+"CJK Ext. B" = "CJK 扩展 B";
 
-"Unicode CJK Unified Ideographs Extension D" = "Unicode CJK 统一表意文字扩展 D 区";
+"CJK Ext. C" = "CJK 扩展 C";
 
-"Unicode CJK Unified Ideographs Extension E" = "Unicode CJK 统一表意文字扩展 E 区";
+"CJK Ext. D" = "CJK 扩展 D";
 
-"Unicode CJK Unified Ideographs Extension F" = "Unicode CJK 统一表意文字扩展 F 区";
+"CJK Ext. E" = "CJK 扩展 E";
 
-"Unicode CJK Unified Ideographs Extension G" = "Unicode CJK 统一表意文字扩展 G 区";
+"CJK Ext. F" = "CJK 扩展 F";
 
-"Unicode CJK Unified Ideographs Extension H" = "Unicode CJK 统一表意文字扩展 H 区";
+"CJK Ext. G" = "CJK 扩展 G";
 
-"Unicode CJK Unified Ideographs Extension I" = "Unicode CJK 统一表意文字扩展 I 区";
+"CJK Ext. H" = "CJK 扩展 H";
 
-"Unicode CJK Unified Ideographs Extension J" = "Unicode CJK 统一表意文字扩展 J 区";
+"CJK Ext. I" = "CJK 扩展 I";
 
-"Radicals, Strokes and Symbols" = "非汉字字符";
+"CJK Ext. J" = "CJK 扩展 J";
+
+"CJK Compatibility" = "CJK 兼容";
+
+"CJK Compatibility Supplement" = "CJK 兼容补充";
+
+"Radicals, Strokes and Symbols" = "部首/笔画/符号";
 
 "Kangxi Radicals" = "康熙部首";
 

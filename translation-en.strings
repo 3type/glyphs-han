@@ -38,29 +38,43 @@
 
 "GB 2312" = "GB 2312";
 
+"GB 18030" = "GB 18030";
+
+"Level 1" = "Level 1";
+
+"Level 2" = "Level 2";
+
+"Level 3" = "Level 3";
+
 "Big 5" = "Big 5";
 
-"Unicode CJK Unified Ideographs" = "Unicode URO";
+"Unicode Blocks" = "Unicode Blocks";
 
-"Unicode CJK Unified Ideographs Extension A" = "Unicode Ext. A";
+"CJK Unified" = "CJK Unified";
 
-"Unicode CJK Unified Ideographs Extension B" = "Unicode Ext. B";
+"CJK Ext. A" = "CJK Ext. A";
 
-"Unicode CJK Unified Ideographs Extension C" = "Unicode Ext. C";
+"CJK Ext. B" = "CJK Ext. B";
 
-"Unicode CJK Unified Ideographs Extension D" = "Unicode Ext. D";
+"CJK Ext. C" = "CJK Ext. C";
 
-"Unicode CJK Unified Ideographs Extension E" = "Unicode Ext. E";
+"CJK Ext. D" = "CJK Ext. D";
 
-"Unicode CJK Unified Ideographs Extension F" = "Unicode Ext. F";
+"CJK Ext. E" = "CJK Ext. E";
 
-"Unicode CJK Unified Ideographs Extension G" = "Unicode Ext. G";
+"CJK Ext. F" = "CJK Ext. F";
 
-"Unicode CJK Unified Ideographs Extension H" = "Unicode Ext. H";
+"CJK Ext. G" = "CJK Ext. G";
 
-"Unicode CJK Unified Ideographs Extension I" = "Unicode Ext. I";
+"CJK Ext. H" = "CJK Ext. H";
 
-"Unicode CJK Unified Ideographs Extension J" = "Unicode Ext. J";
+"CJK Ext. I" = "CJK Ext. I";
+
+"CJK Ext. J" = "CJK Ext. J";
+
+"CJK Compatibility" = "CJK Compatibility";
+
+"CJK Compatibility Supplement" = "CJK Compatibility Supplement";
 
 "Radicals, Strokes and Symbols" = "Other";
 
