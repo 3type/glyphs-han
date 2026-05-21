@@ -21,18 +21,25 @@
     - [x] Commonly Used Chinese Characters / 常用字字形表
 - Character Sets / 字符集
   - [x] GB 2312
+  - [x] GB 18030
+    - [x] Level 1
+    - [x] Level 2
+    - [x] Level 3
   - [x] Big 5 / 大五码
-  - [x] Unicode CJK Unified Ideographs / Unicode CJK 统一表意文字
-  - [x] Unicode CJK Unified Ideographs Extension A / Unicode CJK 统一表意文字扩展 A 区
-  - [ ] Unicode CJK Unified Ideographs Extension B / Unicode CJK 统一表意文字扩展 B 区
-  - [ ] Unicode CJK Unified Ideographs Extension C / Unicode CJK 统一表意文字扩展 C 区
-  - [ ] Unicode CJK Unified Ideographs Extension D / Unicode CJK 统一表意文字扩展 D 区
-  - [ ] Unicode CJK Unified Ideographs Extension E / Unicode CJK 统一表意文字扩展 E 区
-  - [ ] Unicode CJK Unified Ideographs Extension F / Unicode CJK 统一表意文字扩展 F 区
-  - [ ] Unicode CJK Unified Ideographs Extension G / Unicode CJK 统一表意文字扩展 G 区
-  - [ ] Unicode CJK Unified Ideographs Extension H / Unicode CJK 统一表意文字扩展 H 区
-  - [ ] Unicode CJK Unified Ideographs Extension I / Unicode CJK 统一表意文字扩展 I 区
-  - [ ] Unicode CJK Unified Ideographs Extension J / Unicode CJK 统一表意文字扩展 J 区
+- Unicode Blocks / Unicode 区块
+  - [x] CJK Unified
+  - [x] CJK Ext. A
+  - [x] CJK Ext. B
+  - [x] CJK Ext. C
+  - [x] CJK Ext. D
+  - [x] CJK Ext. E
+  - [x] CJK Ext. F
+  - [x] CJK Ext. G
+  - [x] CJK Ext. H
+  - [x] CJK Ext. I
+  - [x] CJK Ext. J
+  - [x] CJK Compatibility
+  - [x] CJK Compatibility Supplement
 - Radicals, Strokes and Symbols / 非汉字字符
   - [x] Kangxi Radicals / 康熙部首
   - [x] Radicals Supplement / 部首扩充
